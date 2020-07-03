@@ -361,7 +361,7 @@
      */
 
     Images.prototype.uploadDone = function (e, data) {
-        $.proxy(this, 'showImage', data.url, data)();
+        $.proxy(this, 'showImage', data.result.url, data)();
 
         this.core.clean();
         this.sorting();
